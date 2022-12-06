@@ -2,7 +2,6 @@ package com.panjohnny.advent.days;
 
 import com.panjohnny.advent.util.DataPairSet;
 import com.panjohnny.advent.util.Day;
-import com.panjohnny.advent.util.InputLoader;
 
 import java.util.*;
 import java.util.function.BiConsumer;
@@ -26,13 +25,12 @@ import java.util.function.BiConsumer;
  */
 @SuppressWarnings("unused")
 public class Day2 extends Day {
-    private final String data;
     private final DataPairSet<Option, Option> options;
     private final int WIN = 6;
     private final int DRAW = 3;
 
     public Day2() {
-        data = InputLoader.readTxt(2);
+        super(2);
         options = new DataPairSet<>();
     }
 

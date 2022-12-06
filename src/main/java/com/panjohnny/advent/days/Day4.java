@@ -2,17 +2,15 @@ package com.panjohnny.advent.days;
 
 import com.panjohnny.advent.util.DataPairSet;
 import com.panjohnny.advent.util.Day;
-import com.panjohnny.advent.util.InputLoader;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @SuppressWarnings("unused")
 public class Day4 extends Day {
-    private final String data;
     private final DataPairSet<IntRange, IntRange> pairs;
     public Day4() {
-        this.data = InputLoader.readTxt(4);
+        super(4);
         this.pairs = new DataPairSet<>();
     }
 

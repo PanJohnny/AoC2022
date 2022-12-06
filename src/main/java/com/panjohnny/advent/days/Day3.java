@@ -1,7 +1,6 @@
 package com.panjohnny.advent.days;
 
 import com.panjohnny.advent.util.Day;
-import com.panjohnny.advent.util.InputLoader;
 
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -23,11 +22,10 @@ import java.util.stream.Collectors;
  */
 @SuppressWarnings("unused")
 public class Day3 extends Day {
-    private final String data;
     private String[] backpacks;
 
     public Day3() {
-        data = InputLoader.readTxt(3);
+        super(3);
     }
 
     @Override

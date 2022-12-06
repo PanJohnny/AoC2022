@@ -15,10 +15,11 @@ public final class InputLoader {
     }
 
     public static String readTxt(int day) {
+        if (day < 1)
+            return readTest();
         return readInput(day, "txt");
     }
 
-    @SuppressWarnings("unused")
     public static String readTest() {
         return readInput(0, "test");
     }

@@ -1,7 +1,6 @@
 package com.panjohnny.advent.days;
 
 import com.panjohnny.advent.util.Day;
-import com.panjohnny.advent.util.InputLoader;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,11 +24,10 @@ import java.util.Collections;
  */
 @SuppressWarnings("unused")
 public class Day1 extends Day {
-    private final String data;
     private final ArrayList<Integer> calories;
 
     public Day1() {
-        data = InputLoader.readTxt(1);
+        super(1);
         calories = new ArrayList<>();
     }
 
