@@ -129,7 +129,7 @@ public class Day7 extends Day {
         public String toString() {
             StringBuilder sb = new StringBuilder();
             sb.append("- ").append(root).append("\n");
-            
+
             root.forEachWithDept((node, depth) -> {
                 sb.append("\t".repeat(Math.max(0, depth)));
                 sb.append("- ").append(node);
